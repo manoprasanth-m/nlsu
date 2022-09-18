@@ -27,7 +27,7 @@ export default function AddOption (props) {
         e.preventDefault()
         // const inp = e.target.elements.option.value.trim()
         // setText({text: inp})
-        Axios.post('http://nlsu.herokuapp.com/confess', {confess: text})
+        Axios.post('https://nlsu.herokuapp.com/confess', {confess: text})
         .then(res => {if(res.status === 200) 
             notifyMessage()
             e.target.elements.option.value = ''
