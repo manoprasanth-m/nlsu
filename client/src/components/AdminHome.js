@@ -36,7 +36,7 @@ export default class AdminHome extends React.Component {
         
     
     deleteConfess = (optiontodelete) => {
-        Axios.delete(`http://nlsu.herokuapp.com/confess/${optiontodelete}`, { headers: AuthHeader() })
+        Axios.delete(`https://nlsu.herokuapp.com/confess/${optiontodelete}`, { headers: AuthHeader() })
         .then(res => {if(res.status === 200) 
             this.notifyMessage()
         }).then(
@@ -49,7 +49,7 @@ export default class AdminHome extends React.Component {
     }
 
     updateConfess = (optiontoupdate, optiontodelete) => {
-        Axios.post('http://nlsu.herokuapp.com/admin-review', {confess: optiontoupdate}, { headers: AuthHeader() })
+        Axios.post('https://nlsu.herokuapp.com/admin-review', {confess: optiontoupdate}, { headers: AuthHeader() })
         .then(res => {if(res.status === 200) 
             this.notifyMessage()
         }).then (Axios.delete(`/confess/${optiontodelete}`, { headers: AuthHeader() }))
@@ -65,7 +65,7 @@ export default class AdminHome extends React.Component {
     componentDidMount() {
         try {
 
-            Axios.get('http://nlsu.herokuapp.com/admin-home', {
+            Axios.get('https://nlsu.herokuapp.com/admin-home', {
                 headers: AuthHeader()
                 })
             .then(response => {
