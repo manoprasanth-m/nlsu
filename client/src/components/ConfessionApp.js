@@ -61,7 +61,7 @@ state = {
         try {
             // const posts = localStorage.getItem('options');
             // const options = JSON.parse(json)
-            Axios.get('/main')
+            Axios.get('http://nlsu.herokuapp.com/main')
             .then(response => {
                 this.setState({
                     options: response.data
