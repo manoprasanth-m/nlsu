@@ -8,8 +8,8 @@ const Options = (props) => (
             
         </div>
 
-    {props.allconfess.length === 0 && <p className="widget-message">Please Hold on   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_dkz94xcg.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop controls autoplay></lottie-player> </p> }
+    {props.allconfess.length === 0 && <p className="widget-message">Please Hold on
+</p> }
 
         {props.allconfess.map((items, index) =>{
             return (
