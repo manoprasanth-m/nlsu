@@ -8,8 +8,11 @@ const Options = (props) => (
             
         </div>
 
-    {props.allconfess.length === 0 && <p className="widget-message">Please Hold on
-</p> }
+    {props.allconfess.length === 0 && <div className="widget-heart">
+    <p className="widget-message">Loading... </p>
+    
+    <div class="lds-heart"><div></div></div>
+    </div> }
 
         {props.allconfess.map((items, index) =>{
             return (
