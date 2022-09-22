@@ -4,7 +4,7 @@ import Option from './Option'
 const Options = (props) => (
     <div>
         <div className="widget-header">
-            <h3 className="widget-title">SPOOKY TALES</h3>
+            <h3 className="widget-title">TALES</h3>
             
         </div>
 
