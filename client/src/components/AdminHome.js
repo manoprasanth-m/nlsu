@@ -52,7 +52,7 @@ export default class AdminHome extends React.Component {
         Axios.post('https://nlsu.herokuapp.com/admin-review', {confess: optiontoupdate}, { headers: AuthHeader() })
         .then(res => {if(res.status === 200) 
             this.notifyMessage()
-        }).then (Axios.delete(`/confess/${optiontodelete}`, { headers: AuthHeader() }))
+        }).then (Axios.delete(`https://nlsu.herokuapp.com/confess/${optiontodelete}`, { headers: AuthHeader() }))
         
         .then(
             this.setState({ 
