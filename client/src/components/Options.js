@@ -11,7 +11,7 @@ const Options = (props) => (
     {props.allconfess.length === 0 && <div className="widget-heart">
     <p className="widget-message">Loading... </p>
     
-    <div class="lds-heart"><div></div></div>
+    <div className="lds-heart"><div></div></div>
     </div> }
 
         {props.allconfess.map((items, index) =>{
